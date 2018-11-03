@@ -18,50 +18,34 @@ public class MethodsOfHomeTask5 {
             System.out.println("Unknown season");}
     }
     public static void seasonSecondVariant (int month){
-        switch (month){
-
+        switch (month) {
             case 1:
-                System.out.println("Winter");
-                break;
             case 2:
+            case 12:
                 System.out.println("Winter");
                 break;
             case 3:
-                System.out.println("Spring");
-                break;
             case 4:
-                System.out.println("Spring");
-                break;
             case 5:
                 System.out.println("Spring");
                 break;
             case 6:
-                System.out.println("Summer");
-                break;
             case 7:
-                System.out.println("Summer");
-                break;
             case 8:
                 System.out.println("Summer");
                 break;
             case 9:
-                System.out.println("Autumn");
-                break;
             case 10:
-                System.out.println("Autumn");
-                break;
             case 11:
                 System.out.println("Autumn");
                 break;
-            case 12:
-                System.out.println("Winter");
-                break;
-                default:
-                    System.out.println("Unknown season");
+            default:
+                System.out.println("Unknown season");
+
         }
     }
     public static long bitDivFour (double number){
-        long x= (int)number>>2;
+        long x= (long) number>>2;
         return  x;
     }
 
