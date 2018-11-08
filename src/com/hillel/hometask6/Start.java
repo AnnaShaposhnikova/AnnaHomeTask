@@ -62,13 +62,19 @@ public class Start {
         System.out.println("Sum of random numbers between -20...20 is: "+MethodsOfHomeTask6.getSumOfRandomNum1());
         System.out.println("Sum of random numbers between -10...9 is: "+MethodsOfHomeTask6.getSumOfRandomNum2());
 
-        String str = "одесса мой город родной";
+        String str = "Одесса мой город родной";
         char[] chArray = str.toCharArray();
         for (int i=0;i<chArray.length; i++){
             if (chArray[i]== 'о'){
                 System.out.println(i);
             }
-
+            System.out.println();
+        String str1 = "Одесса мой город родной";
+            for (int a=0; a < str1.length(); a++){
+                if (str1.charAt(a) == 'о'){
+                    System.out.println(a);
+                }
+            }
         }
 
 
