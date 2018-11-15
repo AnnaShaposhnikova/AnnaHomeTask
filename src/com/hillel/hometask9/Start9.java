@@ -10,7 +10,9 @@ public class Start9 {
 
 
         char [] chArray = {'r', 'o', 'l', 'o', 'c'};
-        char [] newChArray = MethodsOfHometask9.swap(chArray);
+        char [] newChArray = MethodsOfHometask9.swap(chArray,0, chArray.length-1);
+        MyHelper.showArrayChar(newChArray);
+
         System.out.println();
 
        double [] dArray = {23.56, 50D, 100.01, 65.74};
@@ -68,14 +70,11 @@ public class Start9 {
 
         char [] arrayChar = {'a', 'b', 'c', 'd', 'e', 'f', 'g'};
 
-        char[] s = MethodsOfHometask9.reverseArray(arrayChar);
+        MethodsOfHometask9.reverseArray(arrayChar);
 
 
 
     }
-
-
-
 
 
 
