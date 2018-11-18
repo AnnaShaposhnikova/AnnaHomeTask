@@ -1,14 +1,13 @@
 package com.hillel.hometask10;
 
 public class SortArrayChoice {
-    public static int [] swap (int [] arr, int indMin, int i){
+    public static void swap (int [] arr, int ind1, int ind2){
 
 
-        int old = arr [i];
-        arr [i] = arr [indMin];
-        arr [indMin] = old;
+        int old = arr [ind2];
+        arr [ind2] = arr [ind1];
+        arr [ind1] = old;
 
-        return arr;
 
     }
 
