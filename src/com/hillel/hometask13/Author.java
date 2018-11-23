@@ -16,6 +16,20 @@ public class Author {
 
     }
 
+//    Конструктор
+
+    Author(String name,int year){
+        this.authorName = name;
+        birthYear = year;
+
+
+    }
+    public void printInfo(){
+        System.out.println("Author is: " + authorName);
+        System.out.println("Birth Year is: " + birthYear);
+        System.out.println();
+    }
+
 
 
 }
