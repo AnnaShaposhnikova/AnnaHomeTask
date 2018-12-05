@@ -3,55 +3,55 @@ package com.hillel.hometask13;
 public class Book {
     private String name;
     private int numOfPage;
-    private boolean onItsPlase;
     private Author auhtor;
 
 
-    public void read() {
-        onItsPlase = false;
-
-
+    public Book(String name, int numOfPage,  Author auhtor) {
+        this.name = name;
+        this.numOfPage = numOfPage;
+        this.auhtor = auhtor;
     }
 
-    public void standOnShelf() {
-        onItsPlase = true;
-
-    }
-
-    public boolean isOnItsPlase() {
-        if (onItsPlase == false) {
-            System.out.println("Somebody reading the book");
-        } else {
-            System.out.println("Nobody reading the book");
-        }
-        return onItsPlase;
+    public Book(String name, Author auhtor) {
+        this.name = name;
+        this.auhtor = auhtor;
     }
 
     public void setName(String name) {
         this.name = name;
         System.out.println(name);
-
     }
+
 
     public void setNumOfPage(int numOfPage) {
         this.numOfPage = numOfPage;
-        System.out.println("Num of page is: " + numOfPage);
+
 
     }
+    public void setAuhtor(Author author) {
 
-    // Конструктор класса Book
-    Book(String name, int numOfPage) {
-        this.name = name;
-        this.numOfPage = numOfPage;
-
+        this.auhtor = author;
     }
+
 
     public void printInfoBook() {
         System.out.println("Name is: " + name);
         System.out.println("Num of page is: " + numOfPage);
+        auhtor.printInfo();
 
+    }
 
+    @Override
+    public boolean equals (Object obj){
+        Book incomeBook = (Book) obj;
+        boolean comparedName = this.name.equals(incomeBook.name);
+        boolean comparedNumOfPages = this.numOfPage == incomeBook.numOfPage;
+        boolean comparedAuthor = this.auhtor == incomeBook.auhtor;
 
+        if(comparedName && comparedNumOfPages && comparedAuthor){
+            return true;
+        }
+        return false;
     }
 }
 

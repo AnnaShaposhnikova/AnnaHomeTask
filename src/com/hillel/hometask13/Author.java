@@ -4,26 +4,25 @@ public class Author {
     private String authorName;
     private int birthYear;
 
-    public void setName(String name){
-        authorName = name;
-        System.out.println("Author is: " + name);
-
-    }
-    public void setBirthYear(int year){
-        birthYear = year;
-        System.out.println("Birth Year is: " + year);
-
-
+    public Author(String authorName, int birthYear) {
+        this.authorName = authorName;
+        this.birthYear = birthYear;
     }
 
-//    Конструктор
-
-    Author(String name,int year){
-        this.authorName = name;
-        birthYear = year;
-
-
+    public Author(String authorName) {
+        this.authorName = authorName;
     }
+
+    public void setAuthorName(String authorName) {
+        this.authorName = authorName;
+    }
+
+    public void setBirthYear(int birthYear) {
+        this.birthYear = birthYear;
+    }
+
+
+
     public void printInfo(){
         System.out.println("Author is: " + authorName);
         System.out.println("Birth Year is: " + birthYear);
