@@ -21,6 +21,18 @@ public class Author {
         this.birthYear = birthYear;
     }
 
+    @Override
+    public boolean equals (Object obj){
+        Author incomeAuthor = (Author)obj;
+        boolean comparedAuthorName = this.authorName.equals(incomeAuthor.authorName);
+        boolean comparedBirhtYear = this.birthYear == incomeAuthor.birthYear;
+
+        if(comparedAuthorName && comparedBirhtYear){
+            return  true;
+        }
+        return false;
+    }
+
 
 
     public void printInfo(){

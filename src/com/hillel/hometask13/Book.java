@@ -46,7 +46,7 @@ public class Book {
         Book incomeBook = (Book) obj;
         boolean comparedName = this.name.equals(incomeBook.name);
         boolean comparedNumOfPages = this.numOfPage == incomeBook.numOfPage;
-        boolean comparedAuthor = this.auhtor == incomeBook.auhtor;
+        boolean comparedAuthor = this.auhtor.equals(incomeBook.auhtor);
 
         if(comparedName && comparedNumOfPages && comparedAuthor){
             return true;
